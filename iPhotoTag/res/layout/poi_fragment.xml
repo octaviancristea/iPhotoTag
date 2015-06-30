@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    
+    android:background="@drawable/theme11"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+
+     >
+
+    <LinearLayout
+   		android:id="@+id/poiID"
+   		android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+     >
+
+        <TextView
+            android:id="@+id/pointsOfInterestTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#2F0404"
+            android:text="Points of interest"
+            android:layout_margin="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

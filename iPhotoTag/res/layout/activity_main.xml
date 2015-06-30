@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|center"
+    android:background="@drawable/theme2"
+
+    tools:context="com.example.layoutv4.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom|top"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/galleryButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/buttonshape"
+            android:paddingTop="5dp"
+            android:shadowColor="#665A66"
+            android:shadowDx="-3"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="@string/gallery"
+            android:textColor="#2F0404"
+            android:textSize="25sp" 
+            
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            />
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="match_parent"
+           
+            android:layout_gravity="top"
+            android:text="@string/camera"
+           
+            android:layout_height="40dp"
+            android:paddingTop="5dp"
+            android:textColor="#2F0404"
+			android:textSize="25sp"
+			android:background="@drawable/buttonshape"
+			android:shadowColor="#665A66"
+			android:shadowDx="-3"
+			android:shadowDy="0"
+			android:shadowRadius="5"
+			android:layout_marginTop="6dp"
+			 
+			android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+             />
+
+        <Button
+            android:id="@+id/infoButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#665A66"
+            android:shadowDx="-3"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="@string/info"
+            android:textColor="#2F0404"
+            android:textSize="25sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+             />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="40dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/gpsStatus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2F0404"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="@string/GPS" />
+
+            <ImageView
+                android:id="@+id/gpsIcon"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/presence_busy" />
+
+        </TableRow>
+
+    
+    </TableLayout>
+
+</RelativeLayout>
