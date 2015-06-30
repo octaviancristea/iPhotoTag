@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_weight="1" >
+
+    <ImageView
+        android:contentDescription="@string/imageViewDescription"
+        android:id="@+id/full_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/arealButton"
+        android:minWidth="20dp"
+        android:rotation="90" />
+
+    <Button
+        android:id="@+id/bestFitButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/arealButton"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttonshape"
+        android:paddingTop="5dp"
+        android:shadowColor="#665A66"
+        android:shadowDx="-3"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Best Fit"
+        android:textColor="#242424"
+        android:textSize="25sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+         />
+
+    <Button
+        android:layout_marginBottom="3dp"
+        android:id="@+id/arealButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/bestFitButton"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/buttonshape"
+        android:paddingTop="5dp"
+        android:shadowColor="#665A66"
+        android:shadowDx="-3"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Areal"
+        android:textColor="#242424"
+        android:textSize="25sp" 
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        
+        />
+
+</RelativeLayout>
